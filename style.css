@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	background-color: white;
+	color: black;
+	font-family: Calibri, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+div, h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+a, a:visited {
+	color: #0000dd;
+	text-decoration: none;
+}
+
+/* ----------App---------- */
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 10vh auto;
+	height: 60vh;
+}
+
+.form > * {
+	margin: 6px auto;
+	display: flex;
+	padding: 10px;
+	width: 100%;
+}
+
+#input {
+	height: 20vh;
+	font-size: 20px;
+}
+
+#run {
+	font-size: 24px;
+	background-color: dodgerblue;
+	color: white;
+	border: 0;
+	border-radius: 10px;
+	width: max-content;
+	cursor: pointer;
+	transition: 100ms ease-out;
+}
+#run:hover {
+	background-color: white;
+	color: dodgerblue;
+	outline: 1px solid dodgerblue;
+	border-radius: 0;
+}
+
+#stop {
+	font-size: 24px;
+	background-color: crimson;
+	color: white;
+	border: 0;
+	border-radius: 10px;
+	width: max-content;
+	cursor: pointer;
+	transition: 100ms ease-out;
+}
+#stop:hover {
+	background-color: white;
+	color: crimson;
+	border-radius: 0;
+	outline: 1px solid crimson;
+}
